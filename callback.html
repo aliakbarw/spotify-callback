@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Spotify Callback</title>
-</head>
-<body>
-  <h1>Spotify Authorization Code</h1>
-  <p id="code">Waiting for code...</p>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const code = params.get("code");
-    if (code) {
-      document.getElementById("code").innerText = "Your code: " + code;
-      console.log("Spotify code:", code);
-    } else {
-      document.getElementById("code").innerText = "No code found.";
-    }
-  </script>
-</body>
+  <body>
+    <h2>Spotify Authorization Complete</h2>
+    <p>Copy the code from the URL bar (?code=...) and paste it into your bot terminal.</p>
+  </body>
 </html>
